@@ -1,0 +1,22 @@
+{
+    "name": "awheel/phptrie",
+    "description": "Trie 树实现的违禁词搜索和替换",
+    "type": "library",
+    "homepage": "https://github.com/awheel/phptrie",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fengqi",
+            "email": "lyf362345@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "awheel\\PhpTrie\\": "src/"
+        }
+    }
+}
