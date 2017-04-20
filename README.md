@@ -15,6 +15,7 @@ $trie = new PhpTrie();
 $words = ['我是', '我们', 'abcd'];
 $string = '我们是违禁词: abcde';
 
+$trie->addWord($words);
 var_dump($trie->check($string))
 var_dump($trie->search($string))
 var_dump($trie->isWord('我们')))
