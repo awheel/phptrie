@@ -25,7 +25,10 @@ class PhpTrie
      */
     function addWord($word)
     {
-        if (is_array($word)) return array_map([$this, 'addWord'], $word);
+        if (is_array($word)) {
+            array_map([$this, 'addWord'], $word);
+            return true;
+        }
 
         $node = &$this->trie;
         $length = mb_strlen($word);
